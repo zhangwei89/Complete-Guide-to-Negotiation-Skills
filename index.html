@@ -2,42 +2,77 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>《谈判技巧大全》</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="一本覆盖商务、职场、销售、采购、消费、家庭、国际合作等全场景的谈判实战工具书">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+  <title>《谈判技巧大全》</title>
+  <meta name="description" content="覆盖职场、消费、家庭场景的沟通与谈判策略，把难开口的事说清楚。">
+  <meta name="theme-color" content="#c0392b">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.css">
+
+  <style>
+    :root {
+      --theme-color: #c0392b;
+      --theme-color-dark: #922b21;
+      --theme-color-light: #f5b7b1;
+      --sidebar-width: 280px;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; }
+    .markdown-section h1 { color: var(--theme-color); border-bottom: 2px solid var(--theme-color-light); padding-bottom: .3em; }
+    .markdown-section h2 { color: var(--theme-color-dark); }
+    .markdown-section h3 { color: var(--theme-color-dark); }
+    .markdown-section blockquote { border-left: 4px solid var(--theme-color); background: #fdf2ef; }
+    .sidebar { background: #fafafa; }
+    .sidebar ul li.active > a { color: var(--theme-color); border-left: 3px solid var(--theme-color); background: #fdf2ef; }
+    .app-name-link img { display: none; }
+    .app-name-link { color: var(--theme-color) !important; }
+    .markdown-section a { color: var(--theme-color-dark); }
+    .markdown-section a:hover { color: var(--theme-color); }
+    .pagination-item-label { color: var(--theme-color-dark); }
+    .pagination-item:hover { border-color: var(--theme-color); }
+    code, pre { font-family: "JetBrains Mono", Consolas, Monaco, monospace; }
+    .markdown-section table { display: table; width: 100%; }
+    .markdown-section table tr:nth-child(2n) { background: #fdf2ef; }
+    .markdown-section p.tip { background: #fff5ee; border-left-color: var(--theme-color); }
+  </style>
 </head>
 <body>
-  <div id="app">加载中,请稍候...</div>
+  <div id="app">加载中…</div>
+
   <script>
-    window.\ = {
-      name: '《谈判技巧大全》',
+    window.$docsify = {
+      name: '谈判技巧大全',
       repo: 'https://github.com/zhangwei89/Complete-Guide-to-Negotiation-Skills',
       loadSidebar: true,
       loadNavbar: true,
+      coverpage: false,
       auto2top: true,
-      subMaxLevel: 3,
+      subMaxLevel: 2,
+      maxLevel: 4,
       search: {
+        placeholder: '搜索书名、章节、内容',
+        noData: '没有找到结果',
         paths: 'auto',
-        placeholder: '搜索章节',
-        noData: '没有结果'
-      },
-      copyCode: {
-        buttonText: '复制',
-        errorText: '错误',
-        successText: '已复制'
+        depth: 6
       },
       pagination: {
         previousText: '上一章',
         nextText: '下一章',
-        crossChapter: true,
-        crossChapterText: true
+        crossChapter: true
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
       }
     };
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.0/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.3/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markdown.min.js"></script>
 </body>
 </html>
